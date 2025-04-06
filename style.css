@@ -5,6 +5,7 @@
 }
 body{
     background-color: #f4a261;
+
 }
 .navbar {
     background-color: #333;
@@ -39,4 +40,48 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+slider-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Slider styling */
+.slider {
+    width: 80%;
+    height: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(to right, #4caf50, #81c784);
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.slider::-webkit-slider-thumb:hover {
+    background-color: #388e3c;
+}
+
+/* Styling for the value text */
+p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+#sliderValue {
+    color: #4caf50;
 }
